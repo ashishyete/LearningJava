@@ -12,13 +12,13 @@ public class AtomicVariableExample {
 		ExampleClass ex = new ExampleClass();
 		
 		Runnable runnable1 = () ->{
-			for(int i=0;i<1000;i++) {
+			for(int i=0;i<10000;i++) {
 				ex.increment();
 			}
 		};
 		
 		Runnable runnable2= ()->{
-			for(int i=0;i<4000;i++) {
+			for(int i=0;i<10000;i++) {
 				ex.increment();
 			}
 		};

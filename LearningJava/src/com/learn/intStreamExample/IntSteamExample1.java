@@ -2,7 +2,9 @@ package com.learn.intStreamExample;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.IntSummaryStatistics;
+import java.util.Map;
 import java.util.stream.IntStream;
 
 import org.omg.PortableInterceptor.INACTIVE;
@@ -10,6 +12,12 @@ import org.omg.PortableInterceptor.INACTIVE;
 public class IntSteamExample1 {
 
 	public static void main(String[] args) {
+		
+		Map<String,Integer> l = new HashMap<>();
+		l.put("Ashish",1);
+		l.put("A",2);
+		
+		System.out.println(l.getOrDefault("P", -1));
 
 		int arr[] = { 3, 5, 5, 7, 9, 2, 1 };
 

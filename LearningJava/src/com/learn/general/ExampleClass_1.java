@@ -1,23 +1,23 @@
 package com.learn.general;
 
-import java.math.BigDecimal;
-
 public class ExampleClass_1 {
-	
+
 	public static void main(String[] args) {
+
+		int[] intArr = { 1, 1, 2, 4, 6, 7, 7, 9 , 9 ,9 };
 		
-		double d =11.3;
-		double p = 11.2;
+		int[] r = new int[10];
 		
-		double res = d-p;
-		System.out.println(res);
+		for(int i : intArr) {
+			r[i]=1;
+		}
 		
-		BigDecimal bd = new BigDecimal("11.3");
-		BigDecimal bp = new BigDecimal("11.2");
-	
-		String str ="Helo";
-		System.out.println(str.toLowerCase());
-		
+		for(int i=1;i<intArr.length;i++) {
+			if(r[i]==0) {
+				System.out.println("Missing Number : "+i);
+			}
+		}
+
 	}
 
 }

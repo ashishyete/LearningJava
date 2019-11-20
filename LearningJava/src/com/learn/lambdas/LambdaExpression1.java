@@ -25,14 +25,14 @@ public class LambdaExpression1 {
 	public static void main(String[] args) {
 		
 		MyAddInterface myinterface = (int a,int b)-> a+b;
-		//System.out.println("Addition Result is : "+myinterface.add(10, 20));
+		System.out.println("Addition Result is : "+myinterface.add(10, 20));
 		
 		MySafeDivisionInterface mySafeDivInteface = (int a,int b)->{
 			if(b==0)
 				return 0;
 			return a/b;
 		};
-		//System.out.println("Division Result is : "+ mySafeDivInteface.div(10, 0));
+		System.out.println("Division Result is : "+ mySafeDivInteface.div(10, 0));
 		
 		
 		List<String> ll = new ArrayList<String>();

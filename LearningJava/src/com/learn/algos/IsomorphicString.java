@@ -6,7 +6,7 @@ public class IsomorphicString {
 
 	public static void main(String[] args) {
 		String s = "ofoo";
-		String t = "abaa";
+		String t = "abua";
 		System.out.println(isIsomorphic(s, t));
 	}
 

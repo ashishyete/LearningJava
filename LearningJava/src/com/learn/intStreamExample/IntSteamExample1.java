@@ -7,8 +7,6 @@ import java.util.IntSummaryStatistics;
 import java.util.Map;
 import java.util.stream.IntStream;
 
-import org.omg.PortableInterceptor.INACTIVE;
-
 public class IntSteamExample1 {
 
 	public static void main(String[] args) {
